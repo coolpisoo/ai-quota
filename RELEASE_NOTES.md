@@ -17,5 +17,13 @@ AI Quota brings ChatGPT/Codex and Claude/Claude Code quota tracking into one com
 
 - Live speed and limit time are estimates.
 - Provider quota values can update later than local response activity.
+- AI Quota is an independent, unofficial app. Provider interfaces may change or become unavailable without notice.
 - Updates are installed manually in this beta.
 
+## Verification
+
+The macOS app is signed with a Developer ID certificate, notarized by Apple, and accompanied by a SHA-256 checksum. Apple notarization verifies the app package and does not represent endorsement by OpenAI or Anthropic.
+
+`AI-Quota-0.1.0-41-macOS-arm64-x86_64.zip`
+
+SHA-256: `f8ae0f0b5cb7fa2f060b5af13085e667df6419d31c32988a648dfecd363aaa88`

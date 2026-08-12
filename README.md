@@ -34,6 +34,12 @@ Read the full [Privacy Notice](PRIVACY.md).
 
 Available quota windows and update timing depend on the provider, account plan, and local tools installed on the Mac.
 
+## How the connection works
+
+AI Quota is not an official provider integration. It obtains quota metadata from local Codex or Claude Code state and, where available, provider usage interfaces using a session or credential already authenticated by the user. It does not ask for a provider password directly.
+
+These interfaces and response formats are controlled by the providers and may change, be restricted, or stop working without notice. Apple notarization verifies the downloaded app package; it does not represent approval by OpenAI or Anthropic.
+
 ## Install
 
 1. Download the latest notarized ZIP from [Releases](../../releases/latest).
@@ -47,6 +53,7 @@ Updates are currently installed manually by replacing the existing app in Applic
 
 - Live burn rate and limit time are estimates, not provider billing records.
 - Provider-side reporting can update in coarse increments or with a delay.
+- Provider changes may temporarily or permanently affect compatibility.
 - AI Quota is an independent app and is not affiliated with, endorsed by, or sponsored by OpenAI or Anthropic.
 - ChatGPT, OpenAI, Codex, Claude, and Anthropic are trademarks of their respective owners.
 
@@ -59,4 +66,3 @@ See [Support](SUPPORT.md) or email [coolpisoo@gmail.com](mailto:coolpisoo@gmail.
 This repository intentionally contains only the downloadable app, release notes, screenshots, privacy information, and support materials. **The application source code is not published here.** GitHub automatically offers source archives for the small set of public documentation files in this repository; those archives do not contain the AI Quota application source.
 
 Copyright © 2026 Coolpisoo. All rights reserved.
-

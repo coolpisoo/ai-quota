@@ -28,6 +28,8 @@ AI Quota does not copy provider passwords into its own database. macOS may show 
 
 When a provider connection requires it, AI Quota communicates directly with the relevant provider service to request usage information. The provider’s own privacy policy and terms apply to that communication. AI Quota does not route these requests through a developer-operated server.
 
+AI Quota is not an official provider integration. It may rely on local tool state and provider usage interfaces authenticated by the user. Those interfaces may change or become unavailable without notice.
+
 ## Sharing and sale
 
 The developer does not sell personal information. AI Quota does not include third-party advertising, behavioral analytics, or cross-app tracking SDKs.
@@ -40,7 +42,8 @@ Disconnecting a provider removes the corresponding locally stored usage cache an
 
 Public downloads are signed with a Developer ID certificate, notarized by Apple, and published with a SHA-256 checksum. Install only from the official release page and verify the checksum when possible.
 
+AI Quota is independent and is not affiliated with, endorsed by, sponsored by, or officially approved by OpenAI or Anthropic. Apple notarization does not indicate provider approval.
+
 ## Contact
 
 Privacy questions: [coolpisoo@gmail.com](mailto:coolpisoo@gmail.com)
-
