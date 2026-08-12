@@ -2,7 +2,7 @@
 
 **See your ChatGPT and Claude usage at a glance — right from the menu bar.**
 
-[Download the latest release](../../releases/latest)
+[Download the latest public beta](../../releases)
 
 ![AI Quota showing separate ChatGPT and Claude usage cards](assets/dashboard-en.png)
 
@@ -42,7 +42,7 @@ These interfaces and response formats are controlled by the providers and may ch
 
 ## Install
 
-1. Download the latest notarized ZIP from [Releases](../../releases/latest).
+1. Download the latest notarized ZIP from [Releases](../../releases).
 2. Unzip it and move **AI Quota.app** to **Applications**.
 3. Open AI Quota. Its icon appears in the menu bar.
 4. Connect ChatGPT/Codex or Claude/Claude Code only when the app asks you to.
