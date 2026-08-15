@@ -1,17 +1,17 @@
-# AI Quota 0.1.0 — Initial public beta
+# AI Quota 0.1.0 — Public Beta 2
 
-AI Quota brings ChatGPT/Codex and Claude/Claude Code quota tracking into one compact macOS menu bar panel.
+This update improves menu bar reliability, Claude live-rate forecasts, authentication recovery, and localization.
 
 ## Highlights
 
-- Separate live burn-rate waveform for ChatGPT and Claude
-- ChatGPT weekly quota display
-- Claude 5-hour and weekly quota display
-- Remaining/used percentage toggle across the app and menu bar
-- Recent `%/min` burn-rate estimate
-- Reset countdown and estimated limit time
-- Local-first usage history and activity analysis
-- English, Korean, Japanese, German, French, Spanish, Portuguese, Hindi, Indonesian, and Filipino localization
+- Opt-in **Start with Mac** control using the native macOS Login Items service
+- Automatic compact menu bar icon when the full percentages do not fit or overlap a MacBook notch
+- Current usage in the compact icon tooltip and a red critical-state indicator
+- More reliable Claude `%/min` measurement when provider reset timestamps drift by a few seconds
+- Historical forecast fallback while a live Claude rate is temporarily unavailable
+- Fewer false Claude sign-outs during temporary credential rotation or provider errors
+- Official Shoong and JOGAK icons, updated JOGAK description, and refined Recommended Apps section
+- Reviewed English, Korean, Japanese, German, French, Spanish, Portuguese, Hindi, Indonesian, and Filipino localization
 
 ## Beta notes
 
@@ -24,6 +24,6 @@ AI Quota brings ChatGPT/Codex and Claude/Claude Code quota tracking into one com
 
 The macOS app is signed with a Developer ID certificate, notarized by Apple, and accompanied by a SHA-256 checksum. Apple notarization verifies the app package and does not represent endorsement by OpenAI or Anthropic.
 
-`AI-Quota-0.1.0-41-macOS-arm64-x86_64.zip`
+`AI-Quota-0.1.0-42-macOS-arm64-x86_64.zip`
 
-SHA-256: `f8ae0f0b5cb7fa2f060b5af13085e667df6419d31c32988a648dfecd363aaa88`
+SHA-256: `e24bc3427ad0262498c9ac55778166dabc8a9fd4e20e427c368dc12b9d42de5f`

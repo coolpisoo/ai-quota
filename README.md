@@ -17,6 +17,8 @@ AI Quota is a lightweight macOS menu bar app for people who use ChatGPT/Codex an
 - **Reset and limit forecasts** — see when a quota resets and whether the current pace may reach it first.
 - **Your preferred view** — switch the entire app between remaining and used percentages.
 - **Menu bar summary** — check service-specific percentages without opening a full window.
+- **Adaptive menu bar** — automatically falls back to a compact icon when screen or notch space is tight.
+- **Start with your Mac** — opt in once to reopen AI Quota automatically when your desktop appears.
 - **Local-first design** — usage history and activity analysis stay on your Mac.
 
 ## Privacy by design
