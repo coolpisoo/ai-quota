@@ -1,17 +1,13 @@
-# AI Quota 0.1.0 — Public Beta 2
+# AI Quota 0.1.0 — Public Beta 3
 
-This update improves menu bar reliability, Claude live-rate forecasts, authentication recovery, and localization.
+This compatibility update restores the ChatGPT/Codex connection after a recent Codex CLI change.
 
 ## Highlights
 
-- Opt-in **Start with Mac** control using the native macOS Login Items service
-- Automatic compact menu bar icon when the full percentages do not fit or overlap a MacBook notch
-- Current usage in the compact icon tooltip and a red critical-state indicator
-- More reliable Claude `%/min` measurement when provider reset timestamps drift by a few seconds
-- Historical forecast fallback while a live Claude rate is temporarily unavailable
-- Fewer false Claude sign-outs during temporary credential rotation or provider errors
-- Official Shoong and JOGAK icons, updated JOGAK description, and refined Recommended Apps section
-- Reviewed English, Korean, Japanese, German, French, Spanish, Portuguese, Hindi, Indonesian, and Filipino localization
+- Restored ChatGPT/Codex quota updates with the current Codex app-server invocation
+- Removed an obsolete Codex approval option that caused the local server to exit immediately
+- Added regression coverage for the supported stdio launch command
+- Simplified the compact menu bar state by removing the warning exclamation badge
 
 ## Beta notes
 
@@ -24,6 +20,6 @@ This update improves menu bar reliability, Claude live-rate forecasts, authentic
 
 The macOS app is signed with a Developer ID certificate, notarized by Apple, and accompanied by a SHA-256 checksum. Apple notarization verifies the app package and does not represent endorsement by OpenAI or Anthropic.
 
-`AI-Quota-0.1.0-42-macOS-arm64-x86_64.zip`
+`AI-Quota-0.1.0-43-macOS-arm64-x86_64.zip`
 
-SHA-256: `e24bc3427ad0262498c9ac55778166dabc8a9fd4e20e427c368dc12b9d42de5f`
+SHA-256: `20fd0684f672c589f04ece5920a30238e8020eecf81856cda79c6eefd9e3ce66`
