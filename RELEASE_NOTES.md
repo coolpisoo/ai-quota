@@ -1,26 +1,31 @@
-# AI Quota 0.1.3 — Public Beta 4
+# AI Quota 0.1.5 — Public Beta 5
 
-This update brings Claude Code live activity into the Developer ID beta and improves compatibility with recent Claude quota responses.
+This update improves usage tracking across sleep/wake, long-running Codex conversations, and Claude quota resets.
 
-## Highlights
+## Improvements
 
-- Uses recent local Claude Code activity from `~/.claude/projects` for the live waveform and burn-rate estimates
-- Combines available Claude quota windows with recent local activity for reset and limit forecasts
-- Supports Claude’s newer `limits` usage response format
-- Makes refresh state more resilient to transient authentication, provider, and stale background-refresh failures
+- Restarts live activity and graph timing after the Mac wakes, refreshes quota immediately, and retries after the network settles.
+- Keeps a valid local Codex connection when no new usage event has arrived during sleep or idle time.
+- Uses newer quota observations instead of older restored cache, and refreshes local records when the panel opens.
+- Finds recent usage from conversations started weeks or months ago.
+- Reserves space for `100%` in the menu bar so a Claude quota reset does not unexpectedly widen the item; retries numeric display after a temporary compact fallback.
+- Includes Claude connection and quota-response compatibility improvements from recent local builds.
 
 ## Known limitations
 
-- After a Mac screen unlock or app relaunch, provider percentages may temporarily disappear from the menu bar. This recovery issue is still under investigation.
-- Claude quota windows may be unavailable for Free or API-only accounts.
-- Live speed and limit time are estimates, and provider values can update later than local activity.
-- AI Quota is an independent, unofficial app. Provider interfaces may change or become unavailable without notice.
-- Updates are installed manually in this beta.
+- The menu bar can still use a compact icon when there is insufficient space. Open the panel to see available quotas.
+- Live burn rate and limit times are estimates; provider values may arrive in coarse increments or with a delay.
+- The company-account Claude reset fix has automated coverage; the next real account reset still needs confirmation.
+- A clean-Mac installation test and a physical Intel Mac smoke test have not been performed for this release.
+- Provider interfaces may change or become unavailable. Updates are installed manually in this beta.
 
-## Verification
+AI Quota is independent and is not affiliated with, endorsed by, or sponsored by OpenAI or Anthropic.
 
-The universal macOS app is signed with a Developer ID certificate, notarized by Apple, and accompanied by a SHA-256 checksum. Apple notarization verifies the app package and does not represent endorsement by OpenAI or Anthropic.
+## Download verification
 
-`AI-Quota-0.1.3-52-macOS-arm64-x86_64.zip`
+The universal app is signed with Developer ID, notarized by Apple, and provided with a SHA-256 checksum. Apple notarization verifies the app package and does not indicate provider endorsement.
 
-SHA-256: `51569abe4b8217d072df784cef9ce8f652238bb8c544188500916c980bd1aceb`
+`AI-Quota-0.1.5-61-macOS-arm64-x86_64.zip`
+
+SHA-256: `dcda560cb469e38ceb4c9e6bd64a15ebca646593cb5d7d2cbbc719d66b41d649`
+
